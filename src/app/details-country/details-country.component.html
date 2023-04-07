@@ -1,0 +1,27 @@
+<section class="pie-chart-component-body">
+<a class="back-link" routerLink="">Back</a>
+  <div class="chart-header">
+    <div class="chart-title">
+      <h1>{{name}}</h1>
+    </div>
+    <div class="chart-subtitle-container">
+      <div class="chart-subtitle-body">
+        <div class="chart-subtitle">Number of entries</div>
+        <div class="chart-subtitle-digit">{{ participations ? participations.length : 0}}</div>
+      </div>
+      <div class="chart-subtitle-body">
+        <div class="chart-subtitle">Total number of medals</div>
+        <div class="chart-subtitle-digit">{{ totalNumberOfMedals }}</div>
+      </div>
+      <div class="chart-subtitle-body">
+        <div class="chart-subtitle">Total number of athletes</div>
+        <div class="chart-subtitle-digit">{{ totalNumberOfAthletes }}</div>
+      </div>
+    </div>
+    <div class="chart-container">
+            <plotly-plot [data]="graph.data">
+            </plotly-plot>
+      <i class="fa-solid fa-medal"></i>
+    </div>
+  </div>
+</section>

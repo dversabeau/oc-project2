@@ -1,0 +1,66 @@
+.pie-chart-component-body {
+  padding-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.chart-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-title {
+  display: flex;
+  justify-content: center;
+
+  & h1 {
+    color: white;
+    background: #04838f;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 200;
+  }
+
+}
+
+.chart-subtitle-container {
+  display: flex;
+  justify-content: center;
+}
+
+.chart-subtitle-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid darkcyan;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+
+  &:first-child {
+    margin-right: 2rem;
+  }
+
+  & .chart-subtitle {
+    margin-bottom: 0.25rem;
+  }
+
+  & .chart-subtitle-digit {
+    font-weight: 700;
+  }
+}
+
+.medals{
+  background-image: url("/assets/static/medaille.png");
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.surface{
+  cursor: pointer;
+}

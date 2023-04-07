@@ -1,0 +1,23 @@
+<section class="pie-chart-component-body">
+  <div class="chart-header">
+    <div class="chart-title">
+      <h1>Medals per Country</h1>
+    </div>
+    <div class="chart-subtitle-container">
+      <div class="chart-subtitle-body">
+        <div class="chart-subtitle">Number of JOs</div>
+        <div class="chart-subtitle-digit">{{yearsOfJOs.size}}</div>
+      </div>
+      <div class="chart-subtitle-body">
+        <div class="chart-subtitle">Number of countries</div>
+        <div class="chart-subtitle-digit">{{ countries.length }}</div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <plotly-plot (plotlyClick)="click($event)" [data]="graph.data" [layout]="graph.layout">
+
+      </plotly-plot>
+      <i class="fa-solid fa-medal"></i>
+    </div>
+  </div>
+</section>
