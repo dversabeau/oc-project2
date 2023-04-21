@@ -1,9 +1,8 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Olympic} from "../core/models/Olympic";
 import {OlympicService} from "../core/services/olympic.service";
-import {map, mergeMap, Observable} from "rxjs";
-import {Participation} from "../core/models/Participation";
-import {ActivatedRoute, Router} from "@angular/router";
+import {Observable} from "rxjs";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-pie-chart-component',
@@ -17,7 +16,6 @@ export class PieChartComponentComponent implements OnInit {
   values: number[] = [];
   totalMedals: number = 0;
   totalMedalsForCountry: number[] = [];
-
 
   constructor(private olympicService: OlympicService,
               private router: Router) {
@@ -45,7 +43,7 @@ export class PieChartComponentComponent implements OnInit {
       }],
     layout: {
       height: 400,
-      width: 500
+      width: 400
     }
   };
 

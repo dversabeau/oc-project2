@@ -64,3 +64,19 @@
 .surface{
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px){
+  .chart-subtitle-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .chart-subtitle-body{
+      margin-left: 0;
+      margin-right: 0;
+      width: fit-content;
+      &:first-child{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

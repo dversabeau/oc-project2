@@ -54,6 +54,11 @@
   }
 }
 
+.chart-container{
+  display: flex !important;
+  justify-content: center !important;
+}
+
 .medals{
   background-image: url("/assets/static/medaille.png");
   display: block;
@@ -77,5 +82,18 @@
     margin-right: 8px;
     font-weight: 700;
 
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .chart-subtitle-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .chart-subtitle-body{
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
   }
 }

@@ -36,6 +36,10 @@ export class DetailsCountryComponent implements OnInit, OnDestroy {
         showlegend:false,
 
       }],
+    layout: {
+      width: 500,
+      height: 400
+    }
   };
 
   ngOnInit(): void {
