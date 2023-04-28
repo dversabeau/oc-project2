@@ -85,6 +85,12 @@
   }
 }
 
+.dates{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 800px) {
   .chart-subtitle-container{
     flex-direction: column;
